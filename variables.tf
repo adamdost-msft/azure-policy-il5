@@ -3,7 +3,7 @@ variable "stg_policy" {
     enable_policy = string
     policy_effect = string
   })
-  description = "value of the policy_rule parameter for the storage policy"
+  description = "The configuration block policy parameter for the Azure Storage policy"
   default = {
     enable_policy = "true"
     policy_effect = "Deny"
@@ -15,7 +15,7 @@ variable "acr_policy" {
     enable_policy = string
     policy_effect = string
   })
-  description = "value of the policy_rule parameter for the storage policy"
+  description = "The configuration block policy parameter for the Azure Container Registry policy"
   default = {
     enable_policy = "true"
     policy_effect = "Deny"

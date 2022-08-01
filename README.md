@@ -25,8 +25,8 @@ No resources.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_acr_policy"></a> [acr\_policy](#input\_acr\_policy) | value of the policy\_rule parameter for the storage policy | <pre>object({<br>    enable_policy = string<br>    policy_effect = string<br>  })</pre> | <pre>{<br>  "enable_policy": "true",<br>  "policy_effect": "Deny"<br>}</pre> | no |
-| <a name="input_stg_policy"></a> [stg\_policy](#input\_stg\_policy) | value of the policy\_rule parameter for the storage policy | <pre>object({<br>    enable_policy = string<br>    policy_effect = string<br>  })</pre> | <pre>{<br>  "enable_policy": "true",<br>  "policy_effect": "Deny"<br>}</pre> | no |
+| <a name="input_acr_policy"></a> [acr\_policy](#input\_acr\_policy) | The configuration block policy parameter for the Azure Container Registry policy | <pre>object({<br>    enable_policy = string<br>    policy_effect = string<br>  })</pre> | <pre>{<br>  "enable_policy": "true",<br>  "policy_effect": "Deny"<br>}</pre> | no |
+| <a name="input_stg_policy"></a> [stg\_policy](#input\_stg\_policy) | The configuration block policy parameter for the Azure Storage policy | <pre>object({<br>    enable_policy = string<br>    policy_effect = string<br>  })</pre> | <pre>{<br>  "enable_policy": "true",<br>  "policy_effect": "Deny"<br>}</pre> | no |
 
 ## Outputs
 

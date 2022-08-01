@@ -2,9 +2,9 @@ TOTOP := ./
 CURRENT_DIR := ${CURDIR}
 
 
-.PHONY: all init plan cost docs 
+.PHONY: all init plan cost docs apply
 
-all: init plan cost docs 
+all: init plan cost docs apply
 
 init:
 	terraform init \
@@ -18,3 +18,6 @@ cost:
 
 docs:
 	terraform-docs .
+
+apply:
+	terraform apply state.tfstate
