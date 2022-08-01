@@ -1,0 +1,22 @@
+formatter: markdown table
+
+recursive:
+  enabled: true
+  path: modules
+
+output:
+  file: README.md
+  mode: replace
+
+header-from: main.tf
+
+sort: 
+  enabled: true
+  by: required
+
+settings:
+  color: false
+  escape: true
+  indent: 2
+  required: true
+  sensitive: true

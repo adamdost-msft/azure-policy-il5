@@ -14,6 +14,7 @@ No providers.
 
 | Name | Source | Version |
 |------|--------|---------|
+| <a name="module_compute"></a> [compute](#module\_compute) | ./modules/compute | n/a |
 | <a name="module_conatiner_registry"></a> [conatiner\_registry](#module\_conatiner\_registry) | ./modules/ContainerRegistry | n/a |
 | <a name="module_storage"></a> [storage](#module\_storage) | ./modules/Storage | n/a |
 

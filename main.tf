@@ -24,3 +24,9 @@ module "storage" {
   enable_policy = var.stg_policy.enable_policy
   policy_effect = var.stg_policy.policy_effect
 }
+
+module "compute" {
+  source = "./modules/compute"
+  enable_policy = var.stg_policy.enable_policy
+  policy_effect = var.stg_policy.policy_effect
+}
