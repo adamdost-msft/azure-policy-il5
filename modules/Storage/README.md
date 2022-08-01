@@ -11,8 +11,8 @@ No providers.
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_cmk"></a> [cmk](#module\_cmk) | ./cmk | n/a |
-| <a name="module_privateEndpoints"></a> [privateEndpoints](#module\_privateEndpoints) | ./privateEndpoints | n/a |
+| <a name="module_cmk"></a> [cmk](#module\_cmk) | ./modules/cmk | n/a |
+| <a name="module_privateEndpoints"></a> [privateEndpoints](#module\_privateEndpoints) | ./modules/privateEndpoints | n/a |
 
 ## Resources
 

@@ -18,6 +18,9 @@ cost:
 
 docs:
 	terraform-docs .
+	terraform-docs ./modules/ContainerRegistry
+	terraform-docs ./modules/Storage
+
 
 apply:
 	terraform apply state.tfstate

@@ -17,7 +17,7 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [azurerm_policy_definition.acr_cmk](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/policy_definition) | resource |
+| [azurerm_policy_definition.acr_public](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/policy_definition) | resource |
 
 ## Inputs
 

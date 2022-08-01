@@ -1,11 +1,17 @@
 module "cmk" {
-    source = "./cmk"
+    source = "./modules/cmk"
     enable_policy = var.enable_policy
     policy_effect = var.policy_effect
 }
 
 module "privateEndpoints" {
-    source = "./privateEndpoints"
+    source = "./modules/privateEndpoints"
+    enable_policy = var.enable_policy
+    policy_effect = var.policy_effect
+}
+
+module "publicAccess" {
+    source = "./modules/publicAccess"
     enable_policy = var.enable_policy
     policy_effect = var.policy_effect
 }
