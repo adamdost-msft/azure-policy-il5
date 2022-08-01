@@ -6,7 +6,7 @@ module "cmk" {
 
 module "privateEndpoints" {
     source = "./modules/privateEndpoints"
-    enable_policy = var.enable_policy
+    enable_policy = "Audit"
     policy_effect = var.policy_effect
 }
 

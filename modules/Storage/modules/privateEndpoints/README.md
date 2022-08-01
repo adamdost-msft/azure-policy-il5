@@ -23,8 +23,8 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_enable_policy"></a> [enable\_policy](#input\_enable\_policy) | Optional. Configure whether or not to deploy the ACR CMK | `string` | `"true"` | no |
-| <a name="input_policy_effect"></a> [policy\_effect](#input\_policy\_effect) | Optional. Value of the effect parameter for the ACR CMK policy | `string` | `"Deny"` | no |
+| <a name="input_enable_policy"></a> [enable\_policy](#input\_enable\_policy) | Optional. Configure whether or not to deploy the Storage PE Policy | `string` | `"true"` | no |
+| <a name="input_policy_effect"></a> [policy\_effect](#input\_policy\_effect) | Optional. Value of the effect parameter for the Storage PE Policy | `string` | `"Deny"` | no |
 
 ## Outputs
 
