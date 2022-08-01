@@ -9,3 +9,9 @@ module "privateEndpoints" {
     enable_policy = var.enable_policy
     policy_effect = var.policy_effect
 }
+
+module "publicAccess" {
+    source = "./modules/publicaccess"
+    enable_policy = var.enable_policy
+    policy_effect = var.policy_effect  
+}

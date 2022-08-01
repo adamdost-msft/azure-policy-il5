@@ -5,19 +5,19 @@ No requirements.
 
 ## Providers
 
-No providers.
+| Name | Version |
+|------|---------|
+| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | n/a |
 
 ## Modules
 
-| Name | Source | Version |
-|------|--------|---------|
-| <a name="module_cmk"></a> [cmk](#module\_cmk) | ./modules/cmk | n/a |
-| <a name="module_privateEndpoints"></a> [privateEndpoints](#module\_privateEndpoints) | ./modules/privateEndpoints | n/a |
-| <a name="module_publicAccess"></a> [publicAccess](#module\_publicAccess) | ./modules/publicaccess | n/a |
+No modules.
 
 ## Resources
 
-No resources.
+| Name | Type |
+|------|------|
+| [azurerm_policy_definition.stg_public](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/policy_definition) | resource |
 
 ## Inputs
 

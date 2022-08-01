@@ -1,11 +1,11 @@
-resource "azurerm_policy_definition" "stg_pe" {
+resource "azurerm_policy_definition" "stg_public" {
 
   count        = var.enable_policy == "true" ? 1 : 0
-  name         = "stg_public_il5"
+  name         = "stg_pe_il5"
   policy_type  = "Custom"
   mode         = "All"
-  display_name = "Azure DoD IL-5 Compliance - Ensure Private Endpoints are on Azure Storage"
-  description  = "Azure DoD IL-5 Compliance - Use Private Endpoints to manage access to the Azure Storage and ensure that impact level 5 data is not exposed to the public internet and only available in the local network."
+  display_name = "Azure DoD IL-5 Compliance - Disable Public Access to Azure Storage."
+  description  = "Azure DoD IL-5 Compliance - To improve the security of Storage Accounts, ensure that they aren't exposed to the public internet and can only be accessed from a private endpoint. Disable the public network access property as described in https://aka.ms/storageaccountpublicnetworkaccess"
 
   metadata = jsonencode(
     {
@@ -22,20 +22,15 @@ resource "azurerm_policy_definition" "stg_pe" {
             "equals" : "Microsoft.Storage/storageAccounts"
           },
           {
-            "count" : {
-              "field" : "Microsoft.Storage/storageAccounts/privateEndpointConnections[*]",
-              "where" : {
-                "field" : "Microsoft.Storage/storageAccounts/privateEndpointConnections[*].privateLinkServiceConnectionState.status",
-                "equals" : "Approved"
-              }
-            },
-            "less" : 1
+            "field" : "Microsoft.Storage/storageAccounts/publicNetworkAccess",
+            "notEquals" : "Disabled"
           }
         ]
       },
       "then" : {
         "effect" : "[parameters('effect')]"
-    } }
+      }
+    }
   )
   parameters = jsonencode(
     {
